@@ -7,9 +7,10 @@ class RB_AppHookClass
     {
         $GLOBALS['log']->fatal("Event is: ".$event);
         $GLOBALS['log']->fatal("Module is: ".$bean->module_dir);
-        $rb_bean = BeanFactory::newBean("lab_RecycleBin");
+        $rb_bean = BeanFactory::newBean("hats_Recycle_Bin");
         $rb_bean->name = "{$bean->name} - deleted";
-        $rb_bean->related_to = $bean->module_dir;
+        $rb_bean->related_bean = $bean->module_dir;
+        $rb_bean->related_bean_id = $bean->id;
         $rb_bean->save();
     }
 }
