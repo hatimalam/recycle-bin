@@ -10,10 +10,4 @@
  * Copyright (C) SugarCRM Inc. All rights reserved.
  */
 $module_name = 'hats_Recycle_Bin';
-$viewdefs[$module_name]['base']['menu']['quickcreate'] = array(
-    'layout' => 'create',
-    'label' => 'LNK_NEW_RECORD',
-    'visible' => false,
-    'icon' => 'fa-plus',
-    'order' => 1,
-);
+$viewdefs[$module_name]['base']['menu']['quickcreate'] = array();
