@@ -55,56 +55,65 @@ array (
                 'label' => 'LBL_RECORD_SHARE_BUTTON',
                 'acl_action' => 'view',
               ),
-              2 => 
-              array (
-                'type' => 'pdfaction',
-                'name' => 'download-pdf',
-                'label' => 'LBL_PDF_VIEW',
-                'action' => 'download',
-                'acl_action' => 'view',
-              ),
-              3 => 
-              array (
-                'type' => 'pdfaction',
-                'name' => 'email-pdf',
-                'label' => 'LBL_PDF_EMAIL',
-                'action' => 'email',
-                'acl_action' => 'view',
-              ),
+              // 2 => 
+              // array (
+              //   'type' => 'pdfaction',
+              //   'name' => 'download-pdf',
+              //   'label' => 'LBL_PDF_VIEW',
+              //   'action' => 'download',
+              //   'acl_action' => 'view',
+              // ),
+              // 3 => 
+              // array (
+              //   'type' => 'pdfaction',
+              //   'name' => 'email-pdf',
+              //   'label' => 'LBL_PDF_EMAIL',
+              //   'action' => 'email',
+              //   'acl_action' => 'view',
+              // ),
               4 => 
               array (
                 'type' => 'divider',
               ),
-              5 => 
-              array (
-                'type' => 'rowaction',
-                'event' => 'button:find_duplicates_button:click',
-                'name' => 'find_duplicates_button',
-                'label' => 'LBL_DUP_MERGE',
-                'acl_action' => 'edit',
-              ),
-              6 => 
-              array (
-                'type' => 'rowaction',
-                'event' => 'button:duplicate_button:click',
-                'name' => 'duplicate_button',
-                'label' => 'LBL_DUPLICATE_BUTTON_LABEL',
-                'acl_module' => 'hats_Recycle_Bin',
-                'acl_action' => 'create',
-              ),
-              7 => 
-              array (
-                'type' => 'rowaction',
-                'event' => 'button:audit_button:click',
-                'name' => 'audit_button',
-                'label' => 'LNK_VIEW_CHANGE_LOG',
-                'acl_action' => 'view',
-              ),
+              // 5 => 
+              // array (
+              //   'type' => 'rowaction',
+              //   'event' => 'button:find_duplicates_button:click',
+              //   'name' => 'find_duplicates_button',
+              //   'label' => 'LBL_DUP_MERGE',
+              //   'acl_action' => 'edit',
+              // ),
+              // 6 => 
+              // array (
+              //   'type' => 'rowaction',
+              //   'event' => 'button:duplicate_button:click',
+              //   'name' => 'duplicate_button',
+              //   'label' => 'LBL_DUPLICATE_BUTTON_LABEL',
+              //   'acl_module' => 'hats_Recycle_Bin',
+              //   'acl_action' => 'create',
+              // ),
+              // 7 => 
+              // array (
+              //   'type' => 'rowaction',
+              //   'event' => 'button:audit_button:click',
+              //   'name' => 'audit_button',
+              //   'label' => 'LNK_VIEW_CHANGE_LOG',
+              //   'acl_action' => 'view',
+              // ),
               8 => 
               array (
                 'type' => 'divider',
               ),
               9 => 
+              array (
+                'type' => 'rowaction',
+                'event' => 'button:restore_button:click',
+                'name' => 'restore_button',
+                'label' => 'LBL_RESTORE_BUTTON_LABEL',
+                'acl_module' => 'hats_Recycle_Bin',
+                'acl_action' => 'view',
+              ),
+              10 => 
               array (
                 'type' => 'rowaction',
                 'event' => 'button:delete_button:click',
