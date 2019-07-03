@@ -10,8 +10,9 @@
  * Copyright (C) SugarCRM Inc. All rights reserved.
  */
 $mod_strings = array (
-  'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
-  'LBL_ASSIGNED_TO_NAME' => 'Assigned to',
+  'LBL_ASSIGNED_TO_ID' => 'Deleted By User Id',
+  'LBL_ASSIGNED_TO_NAME' => 'Deleted By',
+  'LBL_ASSIGNED_TO' => 'Deleted By',
   'LBL_TAGS_LINK' => 'Tags',
   'LBL_TAGS' => 'Tags',
   'LBL_ID' => 'ID',
@@ -54,4 +55,5 @@ $mod_strings = array (
   'LBL_IMPORT_VCARDTEXT' => 'Automatically create a new Recycle Bin record by importing a vCard from your file system.',
   'LBL_RELATED_BEAN' => 'Related Bean',
   'LBL_RELATED_BEAN_ID' => 'Related Bean ID',
+  'LBL_RESTORE_BUTTON_LABEL' => 'Restore',
 );
