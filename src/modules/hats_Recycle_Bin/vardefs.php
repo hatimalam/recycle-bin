@@ -79,6 +79,9 @@ $dictionary['hats_Recycle_Bin'] = array(
     'optimistic_locking' => true,
     'unified_search' => true,
     'full_text_search' => true,
+    'acls' => array(
+        'SugarACLAdminOnly' => true,
+    ),
 );
 
 if (!class_exists('VardefManager')){
