@@ -55,51 +55,10 @@ array (
                 'label' => 'LBL_RECORD_SHARE_BUTTON',
                 'acl_action' => 'view',
               ),
-              // 2 => 
-              // array (
-              //   'type' => 'pdfaction',
-              //   'name' => 'download-pdf',
-              //   'label' => 'LBL_PDF_VIEW',
-              //   'action' => 'download',
-              //   'acl_action' => 'view',
-              // ),
-              // 3 => 
-              // array (
-              //   'type' => 'pdfaction',
-              //   'name' => 'email-pdf',
-              //   'label' => 'LBL_PDF_EMAIL',
-              //   'action' => 'email',
-              //   'acl_action' => 'view',
-              // ),
               4 => 
               array (
                 'type' => 'divider',
               ),
-              // 5 => 
-              // array (
-              //   'type' => 'rowaction',
-              //   'event' => 'button:find_duplicates_button:click',
-              //   'name' => 'find_duplicates_button',
-              //   'label' => 'LBL_DUP_MERGE',
-              //   'acl_action' => 'edit',
-              // ),
-              // 6 => 
-              // array (
-              //   'type' => 'rowaction',
-              //   'event' => 'button:duplicate_button:click',
-              //   'name' => 'duplicate_button',
-              //   'label' => 'LBL_DUPLICATE_BUTTON_LABEL',
-              //   'acl_module' => 'hats_Recycle_Bin',
-              //   'acl_action' => 'create',
-              // ),
-              // 7 => 
-              // array (
-              //   'type' => 'rowaction',
-              //   'event' => 'button:audit_button:click',
-              //   'name' => 'audit_button',
-              //   'label' => 'LNK_VIEW_CHANGE_LOG',
-              //   'acl_action' => 'view',
-              // ),
               8 => 
               array (
                 'type' => 'divider',
@@ -173,14 +132,35 @@ array (
             'columns' => 2,
             'labelsOnTop' => true,
             'placeholders' => true,
+            'newTab' => false,
+            'panelDefault' => 'expanded',
             'fields' => 
             array (
               0 => 
               array (
-                'name' => 'assigned_user_name',
-                'span' => 12,
+                'name' => 'related_bean',
+                'label' => 'LBL_RELATED_BEAN',
               ),
               1 => 
+              array (
+                'name' => 'related_bean_id',
+                'label' => 'LBL_RELATED_BEAN_ID',
+              ),
+              2 => 
+              array (
+                'name' => 'assigned_user_name',
+                'span' => 6,
+              ),
+              3 => 
+              array (
+                'span' => 6,
+              ),
+              4 => 
+              array (
+                'name' => 'description',
+                'span' => 12,
+              ),
+              5 => 
               array (
                 'name' => 'tag',
                 'span' => 12,
@@ -195,14 +175,11 @@ array (
             'columns' => 2,
             'labelsOnTop' => true,
             'placeholders' => true,
+            'newTab' => false,
+            'panelDefault' => 'expanded',
             'fields' => 
             array (
               0 => 
-              array (
-                'name' => 'description',
-                'span' => 12,
-              ),
-              1 => 
               array (
                 'name' => 'date_modified_by',
                 'readonly' => true,
@@ -226,7 +203,7 @@ array (
                   ),
                 ),
               ),
-              2 => 
+              1 => 
               array (
                 'name' => 'date_entered_by',
                 'readonly' => true,
@@ -252,6 +229,10 @@ array (
               ),
             ),
           ),
+        ),
+        'templateMeta' => 
+        array (
+          'useTabs' => false,
         ),
       ),
     ),

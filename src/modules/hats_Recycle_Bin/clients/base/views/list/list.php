@@ -25,19 +25,26 @@ array (
               ),
               1 => 
               array (
+                'name' => 'related_bean',
+                'label' => 'LBL_RELATED_BEAN',
+                'enabled' => true,
+                'default' => true,
+              ),
+              2 => 
+              array (
                 'name' => 'assigned_user_name',
                 'label' => 'LBL_ASSIGNED_TO_NAME',
                 'default' => true,
                 'enabled' => true,
                 'link' => true,
               ),
-              2 => 
+              3 => 
               array (
                 'name' => 'date_modified',
                 'enabled' => true,
                 'default' => true,
               ),
-              3 => 
+              4 => 
               array (
                 'name' => 'date_entered',
                 'enabled' => true,
