@@ -56,4 +56,7 @@ $mod_strings = array (
   'LBL_RELATED_BEAN' => 'Related Bean',
   'LBL_RELATED_BEAN_ID' => 'Related Bean ID',
   'LBL_RESTORE_BUTTON_LABEL' => 'Restore',
+  'LBL_RESTORED' => 'Restored',
+  'LBL_NOT_RESTORED' => 'Deleted',
+  'LBL_IS_RESTORE' => 'Status',
 );

@@ -32,19 +32,27 @@ array (
               ),
               2 => 
               array (
+                'name' => 'is_restore',
+                'label' => 'LBL_IS_RESTORE',
+                'type' => 'restore',
+                'enabled' => true,
+                'default' => true,
+              ),
+              3 => 
+              array (
                 'name' => 'assigned_user_name',
                 'label' => 'LBL_ASSIGNED_TO_NAME',
                 'default' => true,
                 'enabled' => true,
                 'link' => true,
               ),
-              3 => 
+              4 => 
               array (
                 'name' => 'date_modified',
                 'enabled' => true,
                 'default' => true,
               ),
-              4 => 
+              5 => 
               array (
                 'name' => 'date_entered',
                 'enabled' => true,

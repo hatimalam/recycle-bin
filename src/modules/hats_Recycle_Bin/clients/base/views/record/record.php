@@ -55,15 +55,11 @@ array (
                 'label' => 'LBL_RECORD_SHARE_BUTTON',
                 'acl_action' => 'view',
               ),
-              4 => 
+              2 => 
               array (
                 'type' => 'divider',
               ),
-              8 => 
-              array (
-                'type' => 'divider',
-              ),
-              9 => 
+              3 => 
               array (
                 'type' => 'rowaction',
                 'event' => 'button:restore_button:click',
@@ -72,7 +68,7 @@ array (
                 'acl_module' => 'hats_Recycle_Bin',
                 'acl_action' => 'view',
               ),
-              10 => 
+              4 => 
               array (
                 'type' => 'rowaction',
                 'event' => 'button:delete_button:click',
@@ -117,10 +113,9 @@ array (
               ),
               3 => 
               array (
-                'name' => 'follow',
-                'label' => 'LBL_FOLLOW',
-                'type' => 'follow',
-                'readonly' => true,
+                'name' => 'is_restore',
+                'type' => 'restore',
+                'mark_as_restore' => true,
                 'dismiss_label' => true,
               ),
             ),
