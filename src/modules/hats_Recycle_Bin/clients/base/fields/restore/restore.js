@@ -36,7 +36,7 @@
      * Toggle is_restore flag.
      */
     toggleIsRestored: function() {
-        this.markAs(true);
+        this.restoreData(true);
     },
 
     /**
@@ -45,17 +45,34 @@
      * @param {Boolean} restore `True` marks record as restored, `false` as
      *   deleted.
      */
-    markAs: function(restore) {
+    restoreData: function(restore) {
+        var self = this;
         if (restore === this.model.get('is_restore')) {
             return;
         }
         //write a logic to restore this deleted record.
-        this.model.save({is_restore: !!restore}, {
-            success: _.bind(function() {
-                if (!this.disposed) {
-                    this.render();
-                }
-            }, this)
+        console.log('restore button click..');
+        app.alert.show('restore_data_confirm', {
+            level: 'confirmation',
+            messages: 'Are you sure you want to restore the data?',
+            onConfirm: function() {
+                console.log('restore the data now..');
+                var url = app.api.buildURL(self.module, 'restore', {id: self.model.id});
+                app.api.call('create', url, null, {
+                    success: function(data) {
+                        console.log(data);
+                        if (!self.disposed) {
+                            self.render();
+                        }
+                    },
+                    error: function(err) {
+                        console.log(err);
+                    }
+                });
+            },
+            onCancel: function() {
+                console.log('do nothing');
+            },
         });
     }
 })
