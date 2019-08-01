@@ -101,6 +101,24 @@ $dictionary['hats_Recycle_Bin'] = array(
     'calculated' => false,
     'readonly' => true,
   ),
+  'metadata' => 
+  array (
+    'required' => false,
+    'name' => 'metadata',
+    'vname' => 'LBL_METADATA',
+    'type' => 'text',
+    'comments' => 'Hold deleted record metadata.',
+    'full_text_search' => 
+    array (
+      'enabled' => '0',
+      'boost' => '1',
+      'searchable' => false,
+    ),
+    'readonly' => true,
+    'rows' => 6,
+    'cols' => 80,
+    'duplicate_on_record_copy' => 'no',
+  ),
 ),
     'relationships' => array (
 ),
