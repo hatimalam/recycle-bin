@@ -50,25 +50,9 @@ array (
               ),
               1 => 
               array (
-                'type' => 'shareaction',
-                'name' => 'share',
-                'label' => 'LBL_RECORD_SHARE_BUTTON',
-                'acl_action' => 'view',
-              ),
-              2 => 
-              array (
                 'type' => 'divider',
               ),
-              3 => 
-              array (
-                'type' => 'rowaction',
-                'event' => 'button:restore_button:click',
-                'name' => 'restore_button',
-                'label' => 'LBL_RESTORE_BUTTON_LABEL',
-                'acl_module' => 'hats_Recycle_Bin',
-                'acl_action' => 'view',
-              ),
-              4 => 
+              2 => 
               array (
                 'type' => 'rowaction',
                 'event' => 'button:delete_button:click',
@@ -152,13 +136,22 @@ array (
               ),
               4 => 
               array (
-                'name' => 'description',
+                'name' => 'metadata',
                 'span' => 12,
               ),
               5 => 
               array (
-                'name' => 'tag',
+                'name' => 'description',
                 'span' => 12,
+              ),
+              6 => 
+              array (
+                'name' => 'tag',
+                'span' => 6,
+              ),
+              7 =>
+              array (
+                'span' => 6,
               ),
             ),
           ),
